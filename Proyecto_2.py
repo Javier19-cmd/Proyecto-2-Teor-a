@@ -36,7 +36,7 @@ sucessor = lambda n, f, x: f(n(f, x))
 add = lambda n, m, f, x: n(f, m(f, x))
 
 #Función multiply. n(m(f, x))
-multiply = lambda n, m, f, x: n(f, m(f, x))
+multiply = lambda n, m, f, x: (m(f, x))
 
 #Función exponent.
 exponent = lambda n, m, f, x: m(n, f, x)
@@ -46,7 +46,7 @@ print("Función 1: ", one(alpha, -1))
 print("Función 2: ", two(alpha, -1))
 print("Función 3: ", three(alpha, -1))
 print("Función 4: ", four(alpha, -1))
-print("Función sucessor: ", sucessor(three, alpha, -1))
+print("Función sucessor: ", sucessor(four, alpha, -1))
 print("Función add: ", add(two, three, alpha, -2))
 print("Función multiply: ", multiply(two, three, alpha, -1))
 #print("Función exponent: ", exponent(two, three, alpha, -2))
