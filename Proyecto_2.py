@@ -26,22 +26,26 @@ two = lambda f, x: f(f(f(x)))
 #Función 3.
 three = lambda f, x: f(f(f(f(x))))
 
+#Función 4.
+four = lambda f, x: f(f(f(f(f(x)))))
+
 #Función sucessor.
 sucessor = lambda n, f, x: f(n(f, x))
 
 #Función add.
 add = lambda n, m, f, x: n(f, m(f, x))
 
-#Función multiply.
+#Función multiply. n(m(f, x))
 multiply = lambda n, m, f, x: n(f, m(f, x))
 
 #Función exponent.
-#exponent = lambda n, m, f, x: m(n, f, x)
+exponent = lambda n, m, f, x: m(n, f, x)
 
 print("Función 0: ", zero(alpha, -1))
 print("Función 1: ", one(alpha, -1))
 print("Función 2: ", two(alpha, -1))
 print("Función 3: ", three(alpha, -1))
+print("Función 4: ", four(alpha, -1))
 print("Función sucessor: ", sucessor(three, alpha, -1))
 print("Función add: ", add(two, three, alpha, -2))
 print("Función multiply: ", multiply(two, three, alpha, -1))
