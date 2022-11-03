@@ -41,6 +41,12 @@ cuatro = lambda f: lambda x: f(f(f(f(x))))
 #Función 5.
 cinco = lambda f: lambda x: f(f(f(f(f(x)))))
 
+#Función 6.
+seis = lambda f: lambda x: f(f(f(f(f(f(x))))))
+
+#Función 7.
+siete = lambda f: lambda x: f(f(f(f(f(f(f(x)))))))
+
 #Función sucesor.
 sucesor = lambda n: lambda f: lambda x: f(n(f)(x))
 
@@ -69,10 +75,10 @@ print("Función 2: ", N(dos(alpha)(0)))
 print("Función 3: ", N(tres(alpha)(0)))
 print("Función 4: ", N(cuatro(alpha)(0)))
 print("Función 5: ", N(cinco(alpha)(0)))
-print("Función sucesor: ", N(sucesor(uno)(alpha)(0)))
-print("Función suma: ", N(suma(dos)(dos)(alpha)(0)))
-print("Función multiplicar: ", N(multiplicar(dos)(tres)(alpha)(0)))
-print("Función exponente: ", N(exponente(cinco)(cuatro)(alpha)(0)))
+print("Función sucesor: ", N(sucesor(cinco)(alpha)(0)))
+print("Función suma: ", N(suma(dos)(cinco)(alpha)(0)))
+print("Función multiplicar: ", N(multiplicar(cuatro)(tres)(alpha)(0)))
+print("Función exponente: ", N(exponente(seis)(siete)(alpha)(0)))
 
 print()
 print("--------------------Beta-------------------")
