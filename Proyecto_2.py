@@ -56,7 +56,7 @@ suma = lambda m: lambda n: lambda f: lambda x: m(f)(n(f)(x))
 #Función multiplicar. n(m(f, x)). m se va a componer con sigo misma n veces.
 multiplicar = lambda m: lambda n: lambda f: lambda x: m(n(f))(x)
 
-#Función exponente.
+#Función exponente. n(m)(f)(x) = m^n(f)(x). 
 exponente = lambda m: lambda n: lambda f: lambda x: n(m)(f)(x)
 
 N = get_name #Función para obtener el nombre de la función.
