@@ -18,6 +18,6 @@ Seguido de esta definición se realizaron ciertas operaciones aritméticas con e
 - La función multiplicación se definió de la siguiente manera: suma = λm.λn.λf.λx = a((b(f(x)))).
 - La función de potencia se definió de la siguiente manera: potencia = λm.λn.λf.λn = n(m)(f)(x).
 
-# Sugerencia:
+# Sugerencia
 
 Se recomienda que para poder llevar a cabo este proyecto se tenga claro a nivel teórico que es una función lambda y su definición, dado que existen documentaciones que definen las funciones lambda de diferente manera. Asimismo, es importante tener en claro como es que funciona a nivel matemático como es que funciona una composición de funciones, dado que tanto para definir un número como para definir una función numérica se debe tener en claro como funiona la composición de funciones y se debe tener cierta habilidad para poderlas componer. 
